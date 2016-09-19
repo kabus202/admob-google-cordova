@@ -69,8 +69,8 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
     public static final String BANNER = "banner";
 
     private static final boolean CORDOVA_4 = Integer.valueOf(CordovaWebView.CORDOVA_VERSION.split("\\.")[0]) >= 4;
-    private static final String DEFAULT_AD_PUBLISHER_ID = "ca-app-pub-8440343014846849/3119840614";
-    private static final String DEFAULT_INTERSTITIAL_PUBLISHER_ID = "ca-app-pub-8440343014846849/4596573817";
+    private static final String DEFAULT_AD_PUBLISHER_ID = "ca-app-pub-3331135896671186/9884533552";
+    private static final String DEFAULT_INTERSTITIAL_PUBLISHER_ID = "ca-app-pub-3331135896671186/3474287154";
     private static final String DEFAULT_TAPPX_ID = "/120940746/Pub-2700-Android-8171";
 
     /* Cordova Actions. */
@@ -743,13 +743,13 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
                     _publisherId = DEFAULT_TAPPX_ID;
                 }
             } else if (!isGo2TappxInBannerBackfill) {
-                _publisherId = "ca-app-pub-8440343014846849/3119840614";
+                _publisherId = "ca-app-pub-3331135896671186/9884533552";
                 isGo2TappxInBannerBackfill = true;
             } else {
                 _publisherId = DEFAULT_TAPPX_ID;
             }
         } else if (isBackFill && !isGo2TappxInBannerBackfill) {
-            _publisherId = "ca-app-pub-8440343014846849/3119840614";
+            _publisherId = "ca-app-pub-3331135896671186/9884533552";
             isGo2TappxInBannerBackfill = true;
         } else if (isBackFill) {
             _publisherId = DEFAULT_TAPPX_ID;
@@ -775,13 +775,13 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
                     _interstitialAdId = DEFAULT_TAPPX_ID;
                 }
             } else if (!isGo2TappxInIntesrtitialBackfill) {
-                _interstitialAdId = "ca-app-pub-8440343014846849/4596573817";
+                _interstitialAdId = "ca-app-pub-3331135896671186/3474287154";
                 isGo2TappxInIntesrtitialBackfill = true;
             } else {
                 _interstitialAdId = DEFAULT_TAPPX_ID;
             }
         } else if (isBackFill && !isGo2TappxInIntesrtitialBackfill) {
-            _interstitialAdId = "ca-app-pub-8440343014846849/4596573817";
+            _interstitialAdId = "ca-app-pub-3331135896671186/3474287154";
             isGo2TappxInIntesrtitialBackfill = true;
         } else if (isBackFill) {
             _interstitialAdId = DEFAULT_TAPPX_ID;
