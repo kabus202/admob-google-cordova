@@ -64,9 +64,10 @@
 #define INTERSTITIAL                @"interstitial";
 #define BANNER                      @"banner";
 
-#define DEFAULT_AD_PUBLISHER_ID                 @"ca-app-pub-8440343014846849/2335511010"
-#define DEFAULT_INTERSTITIAL_PUBLISHER_ID       @"ca-app-pub-8440343014846849/3812244218"
-#define DEFAULT_TAPPX_ID                        @"/120940746/Pub-2702-iOS-8226"
+#define DEFAULT_AD_PUBLISHER_ID                 @"ca-app-pub-3331135896671186/4923791156"
+#define DEFAULT_INTERSTITIAL_PUBLISHER_ID       @"ca-app-pub-3331135896671186/6400524356"
+#define DEFAULT_TAPPX_ID                        @"/120940746/Pub-12373-iOS-6186"
+
 
 #define OPT_PUBLISHER_ID            @"publisherId"
 #define OPT_INTERSTITIAL_ADID       @"interstitialAdId"
@@ -486,13 +487,13 @@
                 _publisherId = DEFAULT_TAPPX_ID;
             }
         } else if (!isGo2TappxInBannerBackfill) {
-            _publisherId = @"ca-app-pub-8440343014846849/2335511010";
+            _publisherId = @"ca-app-pub-3331135896671186/4923791156";
             isGo2TappxInBannerBackfill = true;
         } else {
             _publisherId = DEFAULT_TAPPX_ID;
         }
     } else if (isBackFill && !isGo2TappxInBannerBackfill) {
-        _publisherId = @"ca-app-pub-8440343014846849/2335511010";
+        _publisherId = @"ca-app-pub-3331135896671186/4923791156";
         isGo2TappxInBannerBackfill = true;
     } else if (isBackFill) {
         _publisherId = DEFAULT_TAPPX_ID;
@@ -518,13 +519,13 @@
                 _interstitialAdId = DEFAULT_TAPPX_ID;
             }
         } else if (!isGo2TappxInInterstitialBackfill) {
-            _interstitialAdId = @"ca-app-pub-8440343014846849/3812244218";
+            _interstitialAdId = @"ca-app-pub-3331135896671186/6400524356";
             isGo2TappxInInterstitialBackfill = true;
         } else {
             _interstitialAdId = DEFAULT_TAPPX_ID;
         }
     } else if (isBackFill && !isGo2TappxInInterstitialBackfill) {
-        _interstitialAdId = @"ca-app-pub-8440343014846849/3812244218";
+        _interstitialAdId = @"ca-app-pub-3331135896671186/6400524356";
         isGo2TappxInInterstitialBackfill = true;
     } else if (isBackFill) {
         _interstitialAdId = DEFAULT_TAPPX_ID;
